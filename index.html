@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes de continuar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+        }
+
+ 
+    .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --color: hsl(0, 0%, 87%);
+        --animation: 2s ease-in-out infinite;
+      }
+      
+      .loader .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: solid 2px var(--color);
+        border-radius: 50%;
+        margin: 0 10px;
+        background-color: transparent;
+        animation: circle-keys var(--animation);
+      }
+      
+      .loader .circle .dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--color);
+        animation: dot-keys var(--animation);
+      }
+      
+      .loader .circle .outline {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: outline-keys var(--animation);
+      }
+      
+      .circle:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      
+      .circle:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      
+      .circle:nth-child(4) {
+        animation-delay: 0.9s;
+      }
+      
+      .circle:nth-child(5) {
+        animation-delay: 1.2s;
+      }
+      
+      .circle:nth-child(2) .dot {
+        animation-delay: 0.3s;
+      }
+      
+      .circle:nth-child(3) .dot {
+        animation-delay: 0.6s;
+      }
+      
+      .circle:nth-child(4) .dot {
+        animation-delay: 0.9s;
+      }
+      
+      .circle:nth-child(5) .dot {
+        animation-delay: 1.2s;
+      }
+      
+      .circle:nth-child(1) .outline {
+        animation-delay: 0.9s;
+      }
+      
+      .circle:nth-child(2) .outline {
+        animation-delay: 1.2s;
+      }
+      
+      .circle:nth-child(3) .outline {
+        animation-delay: 1.5s;
+      }
+      
+      .circle:nth-child(4) .outline {
+        animation-delay: 1.8s;
+      }
+      
+      .circle:nth-child(5) .outline {
+        animation-delay: 2.1s;
+      }
+      
+      @keyframes circle-keys {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      
+        50% {
+          transform: scale(1.5);
+          opacity: 0.5;
+        }
+      
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes dot-keys {
+        0% {
+          transform: scale(1);
+        }
+      
+        50% {
+          transform: scale(0);
+        }
+      
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      @keyframes outline-keys {
+        0% {
+          transform: scale(0);
+          outline: solid 20px var(--color);
+          outline-offset: 0;
+          opacity: 1;
+        }
+      
+        100% {
+          transform: scale(1);
+          outline: solid 0 transparent;
+          outline-offset: 20px;
+          opacity: 0;
+        }
+      }
+      a {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #cfef00;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #c4e201;
+}
+
+a > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+a:hover svg {
+  transform: translateX(5px);
+}
+
+a:active {
+  transform: scale(0.95);
+}
+#el-2{
+    display: none;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="loader" id="el-1">
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+        <div class="circle">
+          <div class="dot"></div>
+          <div class="outline"></div>
+        </div>
+      </div>
+
+      <a href="https://go.hotmart.com/J91891078F" id="el-2">
+        <span>Continue</span>
+        <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+            <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+        </svg>
+    </a>
+    <script>
+     function alternarElemento(id) {
+  const elemento1 = document.querySelector("#el-1");
+  const elemento2 = document.querySelector("#el-2");
+
+  if (elemento1.style.display === "flex") {
+    elemento1.style.display = "none";
+    elemento2.style.display = "flex";
+  } else {
+    elemento1.style.display = "flex";
+    elemento2.style.display = "none";
+  }
+}
+
+setInterval(alternarElemento, 2000); // Alterna a cada 2 segundos
+
+    </script>
+</body>
+</html>
