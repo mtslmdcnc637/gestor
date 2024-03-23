@@ -199,7 +199,7 @@ a:active {
     </style>
 </head>
 <body>
-    <div class="loader" id="el-1">
+    <div class="loader" id="el1">
         <div class="circle">
           <div class="dot"></div>
           <div class="outline"></div>
@@ -218,7 +218,7 @@ a:active {
         </div>
       </div>
 
-      <a href="https://go.hotmart.com/J91891078F" id="el-2">
+      <a href="https://go.hotmart.com/J91891078F" id="el2">
         <span>Continue</span>
         <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
@@ -227,8 +227,8 @@ a:active {
     </a>
     <script>
      function alternarElemento() {
-  const elemento1 = document.querySelector("#el-1");
-  const elemento2 = document.querySelector("#el-2");
+  const elemento1 = document.getElementById("#el1");
+  const elemento2 = document.getElementById("#el2");
 
   if (elemento1.style.display === "flex") {
     elemento1.style.display = "none";
